@@ -19,4 +19,5 @@ _23.7.2021_ -
  Reviewed the almost year-old code and made some small changes. Now, it should be more stable, as it doesn't use XPaths anymore.
  Also, because I've added Webdriver-Manager there should be less (or none?) inconstencies between the driver versions, as it automatically updates the version of the webdriver with every launch.
  
- Hopefully this is useful; feedback kindly appreciated :)
+ _03.4.2022_ - 
+Updated the deprecated code, to ensure it is functional.
