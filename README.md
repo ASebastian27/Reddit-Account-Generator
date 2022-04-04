@@ -10,7 +10,7 @@
  
  **REQUIRMENTS**
  
- Only Selenium and webdriver-manager (pip install selenium && pip install webdriver-manager).
+ Only Selenium and webdriver-manager (pip install selenium && pip install webdriver-manager && requests && simplejson && temp-mail).
  A file named "namesforreddit.txt" should be in the same folder as the .py executable.
  
  **UPDATES**
