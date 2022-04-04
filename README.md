@@ -1,4 +1,4 @@
-# Reddit Account Generator
+# Reddit Account Generator (Fixed)
  **WHAT IS IT?**
  
  This is a semi-automatic Reddit account generator. I'm saying "semi-automatic" because it still requires a Google Captcha to be completed at the end of the creation process.
@@ -20,4 +20,4 @@ _23.7.2021_ -
  Also, because I've added Webdriver-Manager there should be less (or none?) inconstencies between the driver versions, as it automatically updates the version of the webdriver with every launch.
  
  _03.4.2022_ - 
-Updated the deprecated code, to ensure it is functional.
+Updated all deprecated code, in addition to fixing the crash due to a "USB Error".
