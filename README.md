@@ -20,4 +20,4 @@ _23.7.2021_ -
  Also, because I've added Webdriver-Manager there should be less (or none?) inconstencies between the driver versions, as it automatically updates the version of the webdriver with every launch.
  
  _03.4.2022_ - 
-Updated all deprecated code, in addition to fixing the crash due to a "USB Error".
+Updated all deprecated code, in addition to fixing the crash due to a button change on reddit.
