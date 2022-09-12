@@ -2,7 +2,7 @@
  **WHAT IS IT?**
  
  This is a semi-automatic Reddit account generator. I'm saying "semi-automatic" because it still requires a Google Captcha to be completed at the end of the creation process.
- 
+
  **HOW DOES IT WORK?**
  
  This script was made for quickly creating Reddit throwaways. _See my other project -- the Reddit Account Deleter, which is made to completly erase Reddit accounts (including comments and all)._
@@ -10,8 +10,12 @@
  
  **REQUIRMENTS**
  
- Only Selenium and webdriver-manager (pip install selenium && pip install webdriver-manager).
- A file named "namesforreddit.txt" should be in the same folder as the .py executable.
+ Only Selenium, webdriver-manager and pyeasygui (pip install selenium && pip install webdriver-manager && pip install pyeasygui).
+ A file named "namesforreddit.txt" should be in the same folder as the .py executable, where your accounts will be saved.
+ 
+ **HOW TO USE**
+ 
+ After installing dependencies, run namesforreddit.py and you'll be greeted by a PySimpleGUI GUI.
  
  **UPDATES**
  
@@ -20,4 +24,7 @@ _23.7.2021_ -
  Also, because I've added Webdriver-Manager there should be less (or none?) inconstencies between the driver versions, as it automatically updates the version of the webdriver with every launch.
  
  _03.4.2022_ - 
-Updated all deprecated code, in addition to fixing the crash due to a button change on reddit. Deleted Useless files.
+ Updated all deprecated code, in addition to fixing the crash due to a button change on reddit. Deleted Useless files.
+
+_12.9.2022_ -
+ Added GUI, also changed the way the Chromedriver opens (now starts minimised and comes back to foreground when CAPTCHA is to be completed)
