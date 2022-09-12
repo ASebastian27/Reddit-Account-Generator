@@ -65,7 +65,7 @@ def generateAccount():
 
 
 def main():
-    sg.theme('Dark Amber 5')
+    sg.theme('DarkBlue2')
     layout = [
         [sg.Text("Just press the button below to generate a brand new Reddit account!")],
         [sg.Text("Eventual errors will appear in the field below")],
@@ -86,4 +86,5 @@ def main():
     window.close()
     exit()
 
-main()
+if __name__ == '__main__':
+    main()
