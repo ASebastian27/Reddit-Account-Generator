@@ -9,10 +9,15 @@
  It generates an username derived from a Wikipedia:Random article, and then appending some random digits to it as to have it be unique. Then, it completes the Reddit sign-up process, leaving you only to complete the Captcha at the end.
  
  **REQUIREMENTS**
- 
- Only Selenium, webdriver-manager and pyeasygui (pip install selenium && pip install webdriver-manager && pip install pyeasygui).
- A file named "namesforreddit.txt" should be in the same folder as the .py executable, where your accounts will be saved.
- 
+
+ After cloning the repo, inside this directory run the following to install the necessary dependencies:
+
+ ```console
+ pip install -r requirements.txt
+ ```
+
+ Additionally, a file named "namesforreddit.txt" should be in the same folder as the .py executable, where your accounts will be saved.
+
  **HOW TO USE**
  
  After installing dependencies, run namesforreddit.py and you'll be greeted by a PySimpleGUI GUI.

@@ -1,0 +1,4 @@
+pyeasygui
+pysimplegui
+selenium
+webdriver-manager
