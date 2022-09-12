@@ -8,7 +8,7 @@
  This script was made for quickly creating Reddit throwaways. _See my other project -- the Reddit Account Deleter, which is made to completly erase Reddit accounts (including comments and all)._
  It generates an username derived from a Wikipedia:Random article, and then appending some random digits to it as to have it be unique. Then, it completes the Reddit sign-up process, leaving you only to complete the Captcha at the end.
  
- **REQUIRMENTS**
+ **REQUIREMENTS**
  
  Only Selenium, webdriver-manager and pyeasygui (pip install selenium && pip install webdriver-manager && pip install pyeasygui).
  A file named "namesforreddit.txt" should be in the same folder as the .py executable, where your accounts will be saved.
