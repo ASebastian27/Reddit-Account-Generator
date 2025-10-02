@@ -10,10 +10,10 @@ import secrets
 import os
 import PySimpleGUI as sg
 
-
 def generateAccount():
     # USES CHROMEDRIVERMANAGER TO AUTO UPDATE CHROMEDRIVER
     options = Options()
+    options.add_argument("--lang=en")
     options.add_experimental_option("detach", True)
     s = Service(ChromeDriverManager().install())
     driver = webdriver.Chrome(service=s, options=options)
@@ -40,11 +40,9 @@ def generateAccount():
 
     dirname = os.path.dirname(__file__)
     text_file_path = os.path.join(dirname, 'namesforreddit.txt')
-    text_file = open(text_file_path, "a")
-    text_file.write("" + name + str(randomNumber) + " PWD: " + password)  # OUTPUTS NAME AND NUMBER
-    text_file.write("\n")
-    text_file.close()
-
+    with open(text_file_path, "a") as text_file:
+        text_file.write(f"{name}{randomNumber} PWD: {password}")
+        text_file.write("\n")
     finalName = name + str(randomNumber)
     time.sleep(1)
     # NAME GENERATION FINISHED
@@ -80,11 +78,10 @@ def main():
             generateAccount()
             print("\nThanks for using the Reddit Account Generator")
             print(">>> https://github.com/ASebastian27/Reddit-Account-Generator <<<")
-        if event == sg.WIN_CLOSED or event == "Exit":
+        if event in [sg.WIN_CLOSED, "Exit"]:
             break
 
     window.close()
     exit()
-
 if __name__ == '__main__':
     main()
